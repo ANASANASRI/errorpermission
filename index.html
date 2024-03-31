@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 Error Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom shadow class */
+        .custom-shadow {
+            --tw-shadow: 0 25px 1000px -12px rgba(0, 0, 0, 0.399);
+            --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        }
+    </style>
 </head>
 <body>
     <div class="bg-transparent w-full px-16 md:px-0 h-screen flex items-center justify-center">
-        <div class="bg-white border border-gray-200 flex flex-col items-center justify-center px-4 md:px-8 lg:px-24 py-8 rounded-lg shadow-2xl">
+        <div class="bg-white border border-gray-200 flex flex-col items-center justify-center px-4 md:px-8 lg:px-24 py-8 rounded-lg custom-shadow ">
             <p class="text-6xl md:text-7xl lg:text-9xl font-bold tracking-wider text-gray-300">404</p>
             <p class="text-2xl md:text-3xl lg:text-5xl font-bold tracking-wider text-gray-500 mt-4">Oups !!</p>
             <p class="text-gray-500 mt-4 pb-4 border-b-2 text-center">Sorry, Puis réessayez. Si le problème persiste, merci de contacter le site marchand ou de nous notifier le problème sur paypik.net</p>
